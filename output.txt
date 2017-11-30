@@ -1,0 +1,134 @@
+{
+    "baseline": {
+        "1": {
+            "Total Nodes": 1.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0758,
+            "Efficiency": 100.0,
+            "Net Events Processed": 115712.0
+        },
+        "2": {
+            "Total Nodes": 2.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0433,
+            "Efficiency": 100.0,
+            "Net Events Processed": 115712.0
+        },
+        "4": {
+            "Total Nodes": 4.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0207,
+            "Efficiency": 100.0,
+            "Net Events Processed": 115712.0
+        },
+        "8": {
+            "Total Nodes": 8.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0094,
+            "Efficiency": 100.0,
+            "Net Events Processed": 115712.0
+        },
+        "16": {
+            "Total Nodes": 16.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0056,
+            "Efficiency": 99.13,
+            "Net Events Processed": 115712.0
+        },
+        "32": {
+            "Total Nodes": 32.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0101,
+            "Efficiency": 77.55,
+            "Net Events Processed": 115712.0
+        }
+    },
+    "checkpoint": {
+        "1": {
+            "Total Nodes": 1.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0357,
+            "Efficiency": 100.0,
+            "Net Events Processed": 63416.0
+        },
+        "2": {
+            "Total Nodes": 2.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0246,
+            "Efficiency": 100.0,
+            "Net Events Processed": 63416.0
+        },
+        "4": {
+            "Total Nodes": 4.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0116,
+            "Efficiency": 100.0,
+            "Net Events Processed": 63416.0
+        },
+        "8": {
+            "Total Nodes": 8.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0055,
+            "Efficiency": 100.0,
+            "Net Events Processed": 63416.0
+        },
+        "16": {
+            "Total Nodes": 16.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0034,
+            "Efficiency": 99.6,
+            "Net Events Processed": 63416.0
+        },
+        "32": {
+            "Total Nodes": 32.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0053,
+            "Efficiency": 87.84,
+            "Net Events Processed": 63416.0
+        }
+    },
+    "restart": {
+        "1": {
+            "Total Nodes": 1.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0306,
+            "Efficiency": 100.0,
+            "Net Events Processed": 52296.0
+        },
+        "2": {
+            "Total Nodes": 2.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0239,
+            "Efficiency": 100.0,
+            "Net Events Processed": 52296.0
+        },
+        "4": {
+            "Total Nodes": 4.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0092,
+            "Efficiency": 100.0,
+            "Net Events Processed": 52296.0
+        },
+        "8": {
+            "Total Nodes": 8.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0078,
+            "Efficiency": 99.82,
+            "Net Events Processed": 52296.0
+        },
+        "16": {
+            "Total Nodes": 16.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0033,
+            "Efficiency": 97.99,
+            "Net Events Processed": 52296.0
+        },
+        "32": {
+            "Total Nodes": 32.0,
+            "Total LPs": 2048.0,
+            "Running Time": 0.0044,
+            "Efficiency": 82.57,
+            "Net Events Processed": 52296.0
+        }
+    }
+}
