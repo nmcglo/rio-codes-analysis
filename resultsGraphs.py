@@ -2,12 +2,15 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import json
 import numpy as np
+import collections
+
 np.set_printoptions(suppress=True)
 
 jfile = open('output.txt')
 jtext = jfile.read()
 
-simDict = json.loads(jtext)
+simDict = json.JSONDecoder(object_pairs_hook=collections.OrderedDict).decode(jtext)
+
 
 baselineRuntimeArray = np.zeros((len(simDict['baseline']),2))
 checkpointRuntimeArray = np.zeros((len(simDict['checkpoint']),2))
