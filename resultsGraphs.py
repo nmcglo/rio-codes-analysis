@@ -60,5 +60,9 @@ ax.spines["right"].set_visible(False)
 
 plt.legend(loc='upper right')
 
+plt.savefig("runtime.png")
 
-plt.show()
+
+
+
+# plt.show()
