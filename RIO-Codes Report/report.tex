@@ -84,6 +84,8 @@ There are three main steps to get RIO working on a CODES model:
 
 In a general CODES modelnet simulation there are two classifications of LPs: Modelnet and Non-Modelnet. Examples of modelnet LPs are Dragonfly router and Simplenet LPs. An example of a non-modelnet LP is the server LP types defined in synthetic workload sources.
 
+Before these steps are performed, RIO must be activated as a part of the ROSS build process. This is done using a cmake configuration option. Additionally, CODES expects ROSS libraries to be all in one place so there are some adjustments in the ROSS build process to make RIO libraries accessible to CODES.
+
 \subsection{Step 1: Implementing the RIO API}
 
 \subsubsection{Serializing Non-Modelnet LPs}
@@ -250,7 +252,7 @@ RIO setup functions are called, restart behavior is defined (i.e. Is the deseria
 
 RIO was designed to work with any ROSS model. CODES, being just a very large ROSS model, is no exception. After the three steps of RIO integration into CODES are complete we should expect to have a working, restartable, simulation. To show this, I implemented all of the necessary development to get the Simplenet network model with synthetic workload from \texttt{modelnet-test.c} working with RIO.
 
-\begin{figure}[b] 
+\begin{figure}[h] 
 	\centering
 	\includegraphics[scale=.6]{runtime}
 	\caption{Study of runtime of simulations with 2048 LPs with varying ranks. Two data sets: runtime analysis without RIO integration and the combined checkpoint and restart simulations.} \label{fig:runtime}
@@ -275,7 +277,7 @@ Additionally, mid-simulation checkpointing would require much deeper integration
 \section{Future Work}
 There was a lot of unexpected complexity in the task of serializing CODES simulations that resulted in some original milestones not being met in the three months that I worked on it. Currently RIO checkpoint/restart can be demonstrated on an optimistic simulation of CODES simplenet with a synthetic workload without sacrificing any correctness or determinism of the final state. There is not yet a serializer for other modelnet models like Fat-tree or Dragonfly and replaying traces have not yet been performed.
 
-Next steps would be to solidify the CODES specific RIO API. After the interface is more set in stone, then a developer can implement it on larger, more complicated, network models and ensure that replaying traces does not interfere with checkpointing.
+Next steps would be to solidify the CODES specific RIO API. There are plans of integrating RIO further into ROSS which would make implementation easier for model developers. After the interface is more set in stone, a developer can implement it on larger, more complicated, network models and ensure that replaying traces does not interfere with checkpointing.
 
 
 \end{document}
